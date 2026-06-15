@@ -1,0 +1,240 @@
+[
+    {
+        "id": 1,
+        "tramite_id": 2,
+        "paso": "edicion",
+        "estado": "Datos del trámite editados. Motivo: Corregion de nombre",
+        "fecha": "2026-05-24 18:07:04"
+    },
+    {
+        "id": 2,
+        "tramite_id": 2,
+        "paso": "aceptar",
+        "estado": "Trámite aprobado",
+        "fecha": "2026-05-24 18:07:23"
+    },
+    {
+        "id": 3,
+        "tramite_id": 2,
+        "paso": "edicion",
+        "estado": "Datos del trámite editados. Motivo: corregion de nombre al correcto",
+        "fecha": "2026-05-24 18:07:36"
+    },
+    {
+        "id": 4,
+        "tramite_id": 2,
+        "paso": "edicion",
+        "estado": "Datos del trámite editados. Motivo: cambio de nombre al correcto para la validacion correspondient",
+        "fecha": "2026-05-24 18:09:44"
+    },
+    {
+        "id": 5,
+        "tramite_id": 2,
+        "paso": "rechazar",
+        "estado": "Trámite rechazado",
+        "fecha": "2026-05-24 18:09:53"
+    },
+    {
+        "id": 6,
+        "tramite_id": 2,
+        "paso": "edicion",
+        "estado": "Datos del trámite editados. Motivo: cambio de nombre de materia debido al error del estudiante",
+        "fecha": "2026-05-24 18:12:48"
+    },
+    {
+        "id": 7,
+        "tramite_id": 2,
+        "paso": "aceptar",
+        "estado": "Trámite aprobado",
+        "fecha": "2026-05-24 18:12:53"
+    },
+    {
+        "id": 8,
+        "tramite_id": 2,
+        "paso": "edicion",
+        "estado": "Datos del trámite editados. Motivo: Se corrigió el nombre debido a una equivocación del estudiante al momento de llenar el formulario. También se actualizó la materia solicitada para que el trámite pueda pasar nuevamente a revisión.",
+        "fecha": "2026-05-24 18:13:43"
+    },
+    {
+        "id": 9,
+        "tramite_id": 2,
+        "paso": "aceptar",
+        "estado": "Trámite aprobado",
+        "fecha": "2026-05-24 18:13:46"
+    },
+    {
+        "id": 10,
+        "tramite_id": 3,
+        "paso": "inicio",
+        "estado": "Trámite iniciado",
+        "fecha": "2026-05-24 18:35:50"
+    },
+    {
+        "id": 11,
+        "tramite_id": 3,
+        "paso": "documentos",
+        "estado": "Datos registrados",
+        "fecha": "2026-05-24 18:36:21"
+    },
+    {
+        "id": 12,
+        "tramite_id": 3,
+        "paso": "revision",
+        "estado": "Documentos enviados para revisión",
+        "fecha": "2026-05-24 18:36:31"
+    },
+    {
+        "id": 13,
+        "tramite_id": 4,
+        "paso": "inicio",
+        "estado": "Trámite iniciado",
+        "fecha": "2026-05-24 18:52:24"
+    },
+    {
+        "id": 14,
+        "tramite_id": 5,
+        "paso": "inicio",
+        "estado": "Trámite iniciado",
+        "fecha": "2026-05-24 18:52:26"
+    },
+    {
+        "id": 15,
+        "tramite_id": 5,
+        "paso": "documentos",
+        "estado": "Datos registrados",
+        "fecha": "2026-05-24 18:53:03"
+    },
+    {
+        "id": 16,
+        "tramite_id": 5,
+        "paso": "revision",
+        "estado": "Documentos enviados para revisión",
+        "fecha": "2026-05-24 18:53:11"
+    },
+    {
+        "id": 17,
+        "tramite_id": 5,
+        "paso": "aceptar",
+        "estado": "Trámite aprobado",
+        "fecha": "2026-05-24 18:53:13"
+    },
+    {
+        "id": 18,
+        "tramite_id": 5,
+        "paso": "edicion",
+        "estado": "Datos del trámite editados. Motivo: agregacion de una materia para concluir su carrera",
+        "fecha": "2026-05-24 18:53:40"
+    },
+    {
+        "id": 19,
+        "tramite_id": 5,
+        "paso": "aceptar",
+        "estado": "Trámite aprobado",
+        "fecha": "2026-05-24 18:53:42"
+    },
+    {
+        "id": 20,
+        "tramite_id": 2,
+        "paso": "aceptar",
+        "estado": "Trámite aprobado",
+        "fecha": "2026-05-24 18:54:01"
+    },
+    {
+        "id": 21,
+        "tramite_id": 3,
+        "paso": "edicion",
+        "estado": "Datos del trámite editados. Motivo: agrgacion de datos",
+        "fecha": "2026-05-24 18:55:00"
+    },
+    {
+        "id": 22,
+        "tramite_id": 3,
+        "paso": "aceptar",
+        "estado": "Trámite aprobado",
+        "fecha": "2026-05-24 18:55:02"
+    },
+    {
+        "id": 23,
+        "tramite_id": 4,
+        "paso": "anulacion",
+        "estado": "Trámite anulado. Motivo: Trámite anulado desde la bandeja de administración.",
+        "fecha": "2026-05-24 19:00:58"
+    },
+    {
+        "id": 24,
+        "tramite_id": 6,
+        "paso": "inicio",
+        "estado": "Trámite iniciado",
+        "fecha": "2026-06-09 22:52:02"
+    },
+    {
+        "id": 25,
+        "tramite_id": 7,
+        "paso": "inicio",
+        "estado": "Trámite iniciado",
+        "fecha": "2026-06-09 22:52:06"
+    },
+    {
+        "id": 26,
+        "tramite_id": 8,
+        "paso": "inicio",
+        "estado": "Trámite iniciado",
+        "fecha": "2026-06-15 00:43:06"
+    },
+    {
+        "id": 27,
+        "tramite_id": 9,
+        "paso": "inicio",
+        "estado": "Trámite iniciado",
+        "fecha": "2026-06-15 00:43:08"
+    },
+    {
+        "id": 28,
+        "tramite_id": 10,
+        "paso": "inicio",
+        "estado": "Trámite iniciado",
+        "fecha": "2026-06-15 01:10:14"
+    },
+    {
+        "id": 29,
+        "tramite_id": 11,
+        "paso": "inicio",
+        "estado": "Trámite iniciado",
+        "fecha": "2026-06-15 01:10:44"
+    },
+    {
+        "id": 30,
+        "tramite_id": 11,
+        "paso": "documentos",
+        "estado": "Datos registrados",
+        "fecha": "2026-06-15 01:10:55"
+    },
+    {
+        "id": 31,
+        "tramite_id": 12,
+        "paso": "inicio",
+        "estado": "Trámite iniciado",
+        "fecha": "2026-06-15 01:11:00"
+    },
+    {
+        "id": 32,
+        "tramite_id": 12,
+        "paso": "documentos",
+        "estado": "Datos registrados",
+        "fecha": "2026-06-15 01:11:19"
+    },
+    {
+        "id": 33,
+        "tramite_id": 12,
+        "paso": "revision",
+        "estado": "Documentos enviados para revisión",
+        "fecha": "2026-06-15 01:11:27"
+    },
+    {
+        "id": 34,
+        "tramite_id": 12,
+        "paso": "aceptar",
+        "estado": "Trámite aprobado",
+        "fecha": "2026-06-15 01:11:37"
+    }
+]

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Fotogrametría COLMAP</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #eef2f7;
+            color: #1f2937;
+        }
+
+        header {
+            background: linear-gradient(135deg, #1d3557, #457b9d);
+            color: white;
+            padding: 35px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+
+        header p {
+            margin-top: 10px;
+            font-size: 17px;
+        }
+
+        .contenedor {
+            width: 90%;
+            max-width: 1100px;
+            margin: 35px auto;
+        }
+
+        .seccion {
+            background: white;
+            padding: 25px;
+            border-radius: 18px;
+            box-shadow: 0 8px 18px rgba(0,0,0,0.10);
+            border-top: 5px solid #1d3557;
+            margin-bottom: 28px;
+        }
+
+        .seccion h2 {
+            margin-top: 0;
+            color: #1d3557;
+        }
+
+        .imagen-resultado {
+            width: 100%;
+            max-width: 850px;
+            display: block;
+            margin: 20px auto;
+            border-radius: 12px;
+            border: 2px solid #1d3557;
+            box-shadow: 0 6px 18px rgba(0,0,0,0.18);
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+            gap: 18px;
+            margin-top: 18px;
+        }
+
+        .dato {
+            background: #f8fafc;
+            padding: 18px;
+            border-radius: 12px;
+            border: 1px solid #cbd5e1;
+        }
+
+        .dato strong {
+            color: #1d3557;
+        }
+
+        .codigo {
+            background: #111827;
+            color: white;
+            padding: 18px;
+            border-radius: 12px;
+            font-family: Consolas, monospace;
+            font-size: 14px;
+            line-height: 1.5;
+            white-space: pre-wrap;
+        }
+
+        .botones {
+            margin-top: 25px;
+        }
+
+        .boton {
+            display: inline-block;
+            background: #1d3557;
+            color: white;
+            padding: 12px 18px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-right: 10px;
+            margin-bottom: 10px;
+        }
+
+        .boton:hover {
+            background: #457b9d;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #1d3557;
+            color: white;
+            margin-top: 35px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Fotogrametría COLMAP</h1>
+    <p>Reconstrucción tridimensional de un integrante mediante múltiples fotografías</p>
+</header>
+
+<div class="contenedor">
+
+    <section class="seccion">
+        <h2>Descripción</h2>
+        <p>
+            Esta sección presenta el proceso de fotogrametría realizado con COLMAP. 
+            Para la reconstrucción se utilizaron múltiples fotografías tomadas alrededor 
+            de un integrante del grupo. El software procesó las imágenes, identificó puntos 
+            comunes, calculó la posición de las cámaras y generó una reconstrucción tridimensional 
+            parcial mediante nube de puntos y malla 3D.
+        </p>
+    </section>
+
+    <section class="seccion">
+        <h2>Resultado obtenido</h2>
+        <p>
+            En la siguiente imagen se observa el resultado generado por COLMAP. Las cámaras 
+            aparecen representadas en color rojo alrededor del modelo reconstruido, mientras 
+            que la figura central corresponde a la reconstrucción parcial del integrante.
+        </p>
+
+        <img class="imagen-resultado" src="capturas/colmap_resultado_final.jpeg" alt="Resultado de fotogrametría en COLMAP">
+    </section>
+
+    <section class="seccion">
+        <h2>Datos técnicos</h2>
+
+        <div class="grid">
+            <div class="dato">
+                <strong>Herramienta:</strong>
+                <p>COLMAP</p>
+            </div>
+
+            <div class="dato">
+                <strong>Tipo de datos:</strong>
+                <p>Individual images</p>
+            </div>
+
+            <div class="dato">
+                <strong>Reconstrucción:</strong>
+                <p>Sparse model y Dense model</p>
+            </div>
+
+            <div class="dato">
+                <strong>Modelo generado:</strong>
+                <p>PLY / Poisson Mesh</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="seccion">
+        <h2>Proceso realizado</h2>
+
+        <div class="codigo">1. Se capturaron múltiples fotografías alrededor del integrante.
+2. Las imágenes fueron cargadas en COLMAP.
+3. Se realizó la extracción de características visuales.
+4. Se hizo el emparejamiento de puntos entre fotografías.
+5. COLMAP calculó la posición de las cámaras.
+6. Se generó una nube de puntos del cuerpo.
+7. Se procesó el modelo denso y la malla mediante Poisson.
+8. Se exportaron los archivos fused.ply y meshed-poisson.ply.</div>
+    </section>
+
+    <section class="seccion">
+        <h2>Archivos del modelo 3D</h2>
+        <p>
+            Los archivos generados por COLMAP se guardaron en formato PLY. Estos archivos 
+            pueden abrirse en programas compatibles con modelos 3D, como COLMAP, MeshLab 
+            o Blender.
+        </p>
+
+        <div class="botones">
+            <a class="boton" href="modelos/meshed-poisson.ply" download>Descargar malla Poisson</a>
+            <a class="boton" href="modelos/fused.ply" download>Descargar nube de puntos</a>
+        </div>
+    </section>
+
+    <section class="seccion">
+        <h2>Conclusión</h2>
+        <p>
+            El proceso permitió obtener una reconstrucción tridimensional parcial del integrante 
+            a partir de fotografías. Aunque el resultado no es completamente perfecto, evidencia 
+            el funcionamiento de la técnica de fotogrametría, ya que se logró calcular la posición 
+            de las cámaras y generar una nube de puntos/malla del cuerpo. La calidad final depende 
+            de factores como la iluminación, nitidez de las imágenes, estabilidad de la persona y 
+            textura del fondo.
+        </p>
+    </section>
+
+    <div class="botones">
+        <a class="boton" href="../plataforma_multimedia/">Volver a la plataforma</a>
+    </div>
+
+</div>
+
+<footer>
+    Proyecto Multimedia - Fotogrametría con COLMAP
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,1 @@
+console.log("Sistema de trámites universitarios cargado correctamente.");

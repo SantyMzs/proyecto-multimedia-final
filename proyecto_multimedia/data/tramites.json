@@ -1,0 +1,203 @@
+[
+    {
+        "id": 2,
+        "tipo": "inscripcion",
+        "nombre": "ian",
+        "ci": "4569745",
+        "carrera": "Civil",
+        "correo": "agustin@gmail.com",
+        "datos": {
+            "nombre": "ian",
+            "ci": "4569745",
+            "carrera": "Civil",
+            "correo": "agustin@gmail.com",
+            "gestion": "2026",
+            "materia1": "algebra",
+            "materia2": "calculo",
+            "materia3": ""
+        },
+        "documentos": [],
+        "estado": "aprobado",
+        "paso": "aceptar",
+        "observacion": "El trámite fue aprobado correctamente.",
+        "fecha_creacion": "2026-05-24 18:07:04"
+    },
+    {
+        "id": 3,
+        "tipo": "certificado",
+        "nombre": "ian",
+        "ci": "160305",
+        "carrera": "ciencias",
+        "correo": "smejiab@fcpn.edu.bo",
+        "datos": {
+            "nombre": "ian",
+            "ci": "160305",
+            "carrera": "ciencias",
+            "correo": "smejiab@fcpn.edu.bo",
+            "semestre": "cuarto",
+            "motivo": "tramites"
+        },
+        "documentos": [],
+        "estado": "aprobado",
+        "paso": "aceptar",
+        "observacion": "El trámite fue aprobado correctamente.",
+        "fecha_creacion": "2026-05-24 18:35:50"
+    },
+    {
+        "id": 4,
+        "tipo": "certificado",
+        "nombre": "",
+        "ci": "",
+        "carrera": "",
+        "correo": "",
+        "datos": [],
+        "documentos": [],
+        "estado": "anulado",
+        "paso": "anulado",
+        "observacion": "Trámite anulado desde la bandeja de administración.",
+        "fecha_creacion": "2026-05-24 18:52:24"
+    },
+    {
+        "id": 5,
+        "tipo": "inscripcion",
+        "nombre": "rodrigo",
+        "ci": "4745018",
+        "carrera": "agronomia",
+        "correo": "rodrigo@gmail.com",
+        "datos": {
+            "nombre": "rodrigo",
+            "ci": "4745018",
+            "carrera": "agronomia",
+            "correo": "rodrigo@gmail.com",
+            "gestion": "2024",
+            "materia1": "algebra",
+            "materia2": "tierras",
+            "materia3": "arbol"
+        },
+        "documentos": [
+            "Fotocopia de CI"
+        ],
+        "estado": "aprobado",
+        "paso": "aceptar",
+        "observacion": "El trámite fue aprobado correctamente.",
+        "fecha_creacion": "2026-05-24 18:52:26"
+    },
+    {
+        "id": 6,
+        "tipo": "certificado",
+        "nombre": "",
+        "ci": "",
+        "carrera": "",
+        "correo": "",
+        "datos": [],
+        "documentos": [],
+        "estado": "pendiente",
+        "paso": "inicio",
+        "observacion": "",
+        "fecha_creacion": "2026-06-09 22:52:02"
+    },
+    {
+        "id": 7,
+        "tipo": "inscripcion",
+        "nombre": "",
+        "ci": "",
+        "carrera": "",
+        "correo": "",
+        "datos": [],
+        "documentos": [],
+        "estado": "pendiente",
+        "paso": "inicio",
+        "observacion": "",
+        "fecha_creacion": "2026-06-09 22:52:06"
+    },
+    {
+        "id": 8,
+        "tipo": "certificado",
+        "nombre": "",
+        "ci": "",
+        "carrera": "",
+        "correo": "",
+        "datos": [],
+        "documentos": [],
+        "estado": "pendiente",
+        "paso": "inicio",
+        "observacion": "",
+        "fecha_creacion": "2026-06-15 00:43:06"
+    },
+    {
+        "id": 9,
+        "tipo": "inscripcion",
+        "nombre": "",
+        "ci": "",
+        "carrera": "",
+        "correo": "",
+        "datos": [],
+        "documentos": [],
+        "estado": "pendiente",
+        "paso": "inicio",
+        "observacion": "",
+        "fecha_creacion": "2026-06-15 00:43:08"
+    },
+    {
+        "id": 10,
+        "tipo": "certificado",
+        "nombre": "",
+        "ci": "",
+        "carrera": "",
+        "correo": "",
+        "datos": [],
+        "documentos": [],
+        "estado": "pendiente",
+        "paso": "inicio",
+        "observacion": "",
+        "fecha_creacion": "2026-06-15 01:10:14"
+    },
+    {
+        "id": 11,
+        "tipo": "inscripcion",
+        "nombre": "santy",
+        "ci": "160305",
+        "carrera": "ciencias",
+        "correo": "smejiab@fcpn.edu.bo",
+        "datos": {
+            "nombre": "santy",
+            "ci": "160305",
+            "carrera": "ciencias",
+            "correo": "smejiab@fcpn.edu.bo",
+            "gestion": "2026",
+            "materia1": "algebra",
+            "materia2": "",
+            "materia3": "arbol"
+        },
+        "documentos": [],
+        "estado": "pendiente",
+        "paso": "documentos",
+        "observacion": "",
+        "fecha_creacion": "2026-06-15 01:10:44"
+    },
+    {
+        "id": 12,
+        "tipo": "inscripcion",
+        "nombre": "santy",
+        "ci": "160305",
+        "carrera": "agronomia",
+        "correo": "smejiab@fcpn.edu.bo",
+        "datos": {
+            "nombre": "santy",
+            "ci": "160305",
+            "carrera": "agronomia",
+            "correo": "smejiab@fcpn.edu.bo",
+            "gestion": "2026",
+            "materia1": "sxxs",
+            "materia2": "calculo",
+            "materia3": ""
+        },
+        "documentos": [
+            "Fotocopia de CI"
+        ],
+        "estado": "aprobado",
+        "paso": "aceptar",
+        "observacion": "El trámite fue aprobado correctamente.",
+        "fecha_creacion": "2026-06-15 01:11:00"
+    }
+]

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Procesamiento de Imágenes</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #eef2f7;
+            color: #1f2937;
+        }
+
+        header {
+            background: linear-gradient(135deg, #1d3557, #457b9d);
+            color: white;
+            text-align: center;
+            padding: 35px 20px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+
+        header p {
+            font-size: 18px;
+            margin-top: 10px;
+        }
+
+        .contenedor {
+            width: 90%;
+            max-width: 1150px;
+            margin: 35px auto;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 18px;
+            box-shadow: 0 8px 18px rgba(0,0,0,0.12);
+            margin-bottom: 25px;
+            border-top: 6px solid #1d3557;
+        }
+
+        h2 {
+            color: #1d3557;
+            margin-top: 0;
+        }
+
+        p {
+            line-height: 1.6;
+            font-size: 16px;
+        }
+
+        .grid-imagenes {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 22px;
+            margin-top: 20px;
+        }
+
+        .imagen-card {
+            background: #f8fafc;
+            padding: 15px;
+            border-radius: 14px;
+            text-align: center;
+            border: 1px solid #d1d5db;
+        }
+
+        .imagen-card img {
+            width: 100%;
+            border-radius: 10px;
+            border: 1px solid #cbd5e1;
+        }
+
+        .imagen-card h3 {
+            color: #1d3557;
+            font-size: 18px;
+        }
+
+        .resultados {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        .resultado {
+            background: #e0f2fe;
+            padding: 15px;
+            border-radius: 12px;
+            text-align: center;
+            font-weight: bold;
+            color: #075985;
+        }
+
+        .codigo {
+            background: #111827;
+            color: #e5e7eb;
+            padding: 18px;
+            border-radius: 12px;
+            overflow-x: auto;
+            font-size: 14px;
+        }
+
+        .botones {
+            margin-top: 25px;
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .boton {
+            background: #1d3557;
+            color: white;
+            padding: 12px 18px;
+            text-decoration: none;
+            border-radius: 10px;
+            font-weight: bold;
+        }
+
+        .boton:hover {
+            background: #457b9d;
+        }
+
+        footer {
+            background: #1d3557;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 35px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Procesamiento de Imágenes</h1>
+    <p>Clasificación de texturas y filtro de suavizado 3x3 utilizando Python</p>
+</header>
+
+<div class="contenedor">
+
+    <div class="card">
+        <h2>Descripción</h2>
+        <p>
+            Esta sección presenta la implementación de algoritmos de procesamiento de imágenes
+            trabajando directamente a nivel de píxel. Se desarrollaron dos procesos principales:
+            clasificación de texturas y aplicación de un filtro de suavizado promedio de 3x3 píxeles.
+        </p>
+    </div>
+
+    <div class="card">
+        <h2>Resultados visuales</h2>
+
+        <div class="grid-imagenes">
+
+            <div class="imagen-card">
+                <h3>Imagen original</h3>
+                <img src="resultados/imagen_original.jpg" alt="Imagen original">
+            </div>
+
+            <div class="imagen-card">
+                <h3>Filtro suavizado 3x3</h3>
+                <img src="resultados/imagen_suavizada_3x3.jpg" alt="Imagen suavizada">
+            </div>
+
+            <div class="imagen-card">
+                <h3>Clasificación de texturas</h3>
+                <img src="resultados/imagen_clasificada_texturas.jpg" alt="Imagen clasificada">
+            </div>
+
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Porcentajes de clasificación</h2>
+        <p>
+            Los porcentajes fueron obtenidos recorriendo todos los píxeles de la imagen y clasificando
+            cada uno según sus valores RGB y brillo.
+        </p>
+
+        <div class="resultados">
+            <div class="resultado">Césped / vegetación</div>
+            <div class="resultado">Tierra</div>
+            <div class="resultado">Cemento / superficie clara</div>
+            <div class="resultado">Asfalto / sombra</div>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Filtro de suavizado 3x3</h2>
+        <p>
+            El filtro de suavizado recorre cada píxel de la imagen y calcula el promedio de los valores
+            RGB de sus vecinos dentro de una ventana de 3x3 píxeles. Este proceso reduce el ruido visual
+            y suaviza las transiciones de color.
+        </p>
+
+        <div class="codigo">
+            Para cada pixel:<br>
+            - tomar vecinos en una ventana 3x3<br>
+            - sumar valores R, G y B<br>
+            - dividir entre la cantidad de vecinos<br>
+            - asignar el promedio al pixel de salida
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Clasificación de texturas</h2>
+        <p>
+            La clasificación de texturas analiza los valores RGB y el brillo de cada píxel para identificar
+            superficies como vegetación, tierra, cemento o asfalto/sombra. Cada categoría se representa
+            con un color diferente en la imagen final.
+        </p>
+
+        <div class="codigo">
+            Si G es mayor que R y B → vegetación<br>
+            Si el brillo es bajo → asfalto o sombra<br>
+            Si predominan tonos marrones → tierra<br>
+            Si los valores RGB son parecidos → cemento o superficie clara
+        </div>
+    </div>
+
+    <div class="botones">
+        <a class="boton" href="../plataforma_multimedia/">Volver a la plataforma</a>
+        <a class="boton" href="procesamiento.py">Ver código Python</a>
+    </div>
+
+</div>
+
+<footer>
+    Actividades individuales - Procesamiento de Imágenes
+</footer>
+
+</body>
+</html>

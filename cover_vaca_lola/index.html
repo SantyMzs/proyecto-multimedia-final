@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Animación Vaca Lola</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #eef2f7;
+            color: #1f2937;
+        }
+
+        header {
+            background: linear-gradient(135deg, #1d3557, #457b9d);
+            color: white;
+            text-align: center;
+            padding: 35px 20px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 38px;
+        }
+
+        header p {
+            font-size: 18px;
+            margin-top: 10px;
+        }
+
+        .contenedor {
+            width: 90%;
+            max-width: 1100px;
+            margin: 35px auto;
+            padding-bottom: 60px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 18px;
+            box-shadow: 0 8px 18px rgba(0,0,0,0.12);
+            margin-bottom: 25px;
+            border-top: 6px solid #1d3557;
+        }
+
+        h2 {
+            color: #1d3557;
+            margin-top: 0;
+        }
+
+        p {
+            line-height: 1.6;
+            font-size: 16px;
+        }
+
+        .video-contenedor {
+            background: #111827;
+            padding: 18px;
+            border-radius: 16px;
+            text-align: center;
+        }
+
+        video {
+            width: 100%;
+            max-width: 950px;
+            border-radius: 12px;
+            border: 3px solid #1d3557;
+            background: black;
+        }
+
+        .datos {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .dato {
+            background: #f8fafc;
+            border: 1px solid #d1d5db;
+            border-radius: 14px;
+            padding: 18px;
+        }
+
+        .dato strong {
+            color: #1d3557;
+        }
+
+        .codigo {
+            background: #111827;
+            color: #e5e7eb;
+            padding: 18px;
+            border-radius: 12px;
+            overflow-x: auto;
+            font-size: 14px;
+        }
+
+        .botones {
+            margin-top: 25px;
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .boton {
+            background: #1d3557;
+            color: white;
+            padding: 12px 18px;
+            text-decoration: none;
+            border-radius: 10px;
+            font-weight: bold;
+        }
+
+        .boton:hover {
+            background: #457b9d;
+        }
+
+        footer {
+            background: #1d3557;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 35px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Animación Vaca Lola</h1>
+    <p>Producción multimedia generada en Google Colab con Python</p>
+</header>
+
+<div class="contenedor">
+
+    <div class="card">
+        <h2>Video final</h2>
+        <p>
+            Esta sección presenta el resultado final del cover multimedia de “La Vaca Lola”.
+            La animación fue generada en Google Colab utilizando Python, vinculando el audio
+            con movimientos visuales sincronizados.
+        </p>
+
+        <div class="video-contenedor">
+            <video controls>
+                <source src="video/cover_vaca_lola_colab.mp4" type="video/mp4">
+                Tu navegador no soporta la reproducción de video.
+            </video>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Descripción técnica</h2>
+        <p>
+            Para esta actividad se utilizó Python en Google Colab. El programa carga el audio
+            de la canción, analiza su intensidad y genera una animación mediante código. 
+            Los movimientos de la vaca, los monigotes, las luces y los elementos musicales
+            se modifican según la intensidad del audio.
+        </p>
+
+        <div class="datos">
+            <div class="dato">
+                <strong>Herramienta:</strong>
+                <p>Google Colab</p>
+            </div>
+
+            <div class="dato">
+                <strong>Lenguaje:</strong>
+                <p>Python</p>
+            </div>
+
+            <div class="dato">
+                <strong>Librerías:</strong>
+                <p>MoviePy, Pillow y NumPy</p>
+            </div>
+
+            <div class="dato">
+                <strong>Resultado:</strong>
+                <p>Video MP4 con audio y animación sincronizada</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Proceso realizado</h2>
+        <div class="codigo">
+            1. Se cargó el audio de La Vaca Lola en Google Colab.<br>
+            2. Se analizó la intensidad del audio por intervalos de tiempo.<br>
+            3. Se dibujaron los elementos visuales mediante Python.<br>
+            4. Se sincronizaron movimientos con la intensidad del audio.<br>
+            5. Se exportó el resultado final como video MP4.
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Conclusión</h2>
+        <p>
+            El resultado cumple con la producción multimedia solicitada, ya que integra audio,
+            animación y sincronización de movimiento. Además, el video final puede visualizarse
+            desde la plataforma web del proyecto.
+        </p>
+    </div>
+
+    <div class="botones">
+        <a class="boton" href="../plataforma_multimedia/">Volver a la plataforma</a>
+        <a class="boton" href="video/cover_vaca_lola_colab.mp4" target="_blank">Abrir video</a>
+    </div>
+
+</div>
+
+<footer>
+    Actividad individual - Cover de La Vaca Lola
+</footer>
+
+</body>
+</html>
